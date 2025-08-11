@@ -3,7 +3,14 @@ const light = document.querySelector(".spotlight");
 const lightButton = document.querySelector(".spotlightButton");
 
 
-let refreshLight = document.addEventListener("mousemove", (event) => {
+let refreshLightMouse = document.addEventListener("mousemove", (event) => {
+    let posX = event.pageX;
+    let posY = event.pageY;
+    
+    light.style.background = `radial-gradient(200px at ${posX}px ${posY}px, rgba(0, 0, 0, 0),rgba(0,0,0,0.95))`
+})
+
+let refreshLightTouch = document.addEventListener("touchmove", (event) => {
     let posX = event.pageX;
     let posY = event.pageY;
     
