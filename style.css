@@ -311,7 +311,7 @@ section{
 }
 
 #ProjectContent {
-    padding: 10em;
+    padding: 2em;
     position: relative;
     overflow-y: auto;
     height: 100%;
@@ -403,11 +403,19 @@ footer a {
     section {
         width: 90%;
     }
+
+    #ProjectContent {
+        padding: 5em;
+    }
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
     section {
         width: 60%;
+    }
+
+    #ProjectContent {
+        padding:5em 10em;
     }
 }
