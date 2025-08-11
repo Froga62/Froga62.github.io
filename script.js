@@ -159,14 +159,7 @@ let heightObserver = new ResizeObserver(entries => {
 
 //Partie du codes gérant les projets à afficher
 let projects = [
-    {projectName : "TestName", projectImageURL : "./images/projects/test/me.jpg", projectDescription : "Ce projet avait pour but de me montrer", languages : "C, C++", screenShots : [
-        "./images/projects/test/image.png",
-        "./images/projects/test/me.jpg"
-    ]},
-    {projectName : "Projet 2", projectImageURL : "./images/projects/test/image.jpg", projectDescription : "Ce projet avait pour but de ", languages : "C, C--", screenShots : [
-        "./images/icons8-accueil-30.png",
-        "./images/projects/test/me.jpg"
-    ]}
+    {projectName : "Test", projectImageURL : "./images/projects/test/me.jpg", projectDescription : "Les projets sont actuellement en cours de publications, pour les consulter, veuillez revenir ultérieurement", languages : "...", screenShots : []},
 ];
 
 //Récupération des éléments du DOM
