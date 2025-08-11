@@ -317,7 +317,6 @@ section{
     height: 100%;
 }
 #Project {
-    width: 12em;
     padding: 0.5em;
     background-color: #D1C9AD;
     border-radius: 1em;
@@ -326,7 +325,7 @@ section{
 }
 
 #Project img {
-    width: 100%;
+    width: 6em;
     margin: 0;
     aspect-ratio: 1/1;
     border-radius: 1em;
@@ -411,6 +410,10 @@ footer a {
     #ProjectContent {
         padding: 5em;
     }
+
+    #Project img {
+        width: 8em;
+    }
 }
 
 /* Desktop */
@@ -421,5 +424,9 @@ footer a {
 
     #ProjectContent {
         padding:5em 10em;
+    }
+
+        #Project img {
+        width: 10em;
     }
 }
