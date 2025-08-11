@@ -11,8 +11,8 @@ let refreshLightMouse = document.addEventListener("mousemove", (event) => {
 })
 
 let refreshLightTouch = document.addEventListener("touchmove", (event) => {
-    let posX = event.pageX;
-    let posY = event.pageY;
+    let posX = event.touches[0].clientX;
+    let posY = event.touches[0].clientY;
     
     light.style.background = `radial-gradient(200px at ${posX}px ${posY}px, rgba(0, 0, 0, 0),rgba(0,0,0,0.95))`
 })
