@@ -329,6 +329,7 @@ section{
     width: 100%;
     margin: 0;
     aspect-ratio: 1/1;
+    border-radius: 1em;
     object-fit: cover;
 }
 
