@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Portfolio</title>
+
+    <!--Import de la police principale-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="spotlight"></div>
+        <h1>BILLAUD<br>RYAN</h1>
+        <p id="student">Etudiant en L3 informatique à <br>la faculté Jean Perrin à Lens</p>
+        <p id="dream">
+            Mon rêve ?<br>
+            Devenir developpeur web fullstack.
+        </p>
+        <img src="./images/icons8-ampoule-globe-100-off.png" class="spotlightButton spotlightButtonOff">
+    </header>
+    <nav>
+        <a href="#"><img src="./images/icons8-accueil-30.png" alt="home"></a>
+        <img class="burger" src="./images/icons8-menu-50.png">
+        <ul>
+            <li><a href="#AboutMe">A PROPOS DE MOI</a></li>
+            <li><a href="#Parcours">MON PARCOURS</a></li>
+            <li><a href="#Projects">MES PROJETS</a></li>
+        </ul>
+
+        <a href="https://github.com/Froga62" target="_blank"><img src="./images/icons8-github-30.png" alt="github"></a>
+        <a href="" target="_blank"><img src="./images/icons8-linkedin-30.png" alt="linkedin"></a>
+    </nav>
+    <ul class="menu">
+        <li><a href="#AboutMe">A PROPOS DE MOI</a></li>
+        <li><a href="#Parcours">MON PARCOURS</a></li>
+        <li><a href="#Projects">MES PROJETS</a></li>
+    </ul>
+    
+    <main>
+        <section id="AboutMe">
+            <img src="./images/me.jpg" alt="Photo de Ryan Billaud">
+            <h1>Qui suis-je ?</h1>
+            <p>Bonjour à tous ! Je m'appelle Ryan Billaud, je suis actuellement en 3eme année de licence informatique passionné et motivé d'apprendre ! Je suis actuellement à la recherche d'un stage d'une durée de 2 mois minimum pour mars 2026.</p>
+        </section>
+        <section id="Parcours">
+            <h1>Mon parcours</h1>
+            <h2 id="ParcoursType"></h2>
+            <div class="carrousel">
+                <img src="./images/icons8-flèche-gauche.png" alt="flèche gauche" id="leftArrow">
+                <div class="slide">
+                    <div class="item before">
+                        <h3></h3>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div class="item visible">
+                        <h3></h3>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div class="item after">
+                        <h3></h3>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+                <img src="./images/icons8-flèche-droite.png" alt="flèche droite" id="rightArrow">
+            </div>
+        </section>
+        <section id="Projects">
+            <h1>Mes Projets</h1>
+                <div class="grid">
+                </div>
+                <div id="PopupProject">
+                    <div id="ProjectContent">
+                        <img src="./images/icons8-effacer-60.png" alt="Close" id="Close">
+                        <h1 id="ProjectName"></h1>
+                        <figure>
+                            <div id="Project"><img src="" alt="projectImage" id="ProjectImage"></div>
+                            <figcaption id = "ProjectDescription"></figcaption>
+                        </figure>
+                        <h2>Langages / Technologies utilisées</h2>
+                        <p id="Languages"></p>
+                        <h2>Captures d'écran</h2>
+                        <div id="Screenshots"></div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#">Haut de page</a></p>
+        <p>Webmaster <a href="mailto:rn.billaud@gmail.com" target="_blank">BILLAUD Ryan</a></p>
+        <p>Icon by <a href="https://icones8.fr/" target="_blank">Icones8</a></p>
+    </footer>
+</body>
+</html>
