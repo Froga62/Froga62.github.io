@@ -2,20 +2,30 @@
 const light = document.querySelector(".spotlight");
 const lightButton = document.querySelector(".spotlightButton");
 
+let lastX = window.innerWidth / 2;
+let lastY = window.innerHeight / 2;
+function updatePosition(x, y) {
+    lastX = x;
+    lastY = y;
+    light.style.background = `radial-gradient(200px at ${x}px ${y}px, rgba(0, 0, 0, 0),rgba(0,0,0,0.95))`
+}
 
 let refreshLightMouse = document.addEventListener("mousemove", (event) => {
     let posX = event.pageX;
     let posY = event.pageY;
     
-    light.style.background = `radial-gradient(200px at ${posX}px ${posY}px, rgba(0, 0, 0, 0),rgba(0,0,0,0.95))`
+    updatePosition(posX, posY);
 })
 
-let refreshLightTouch = document.addEventListener("touchmove", (event) => {
-    let posX = event.touches[0].clientX;
-    let posY = event.touches[0].clientY;
-    
-    light.style.background = `radial-gradient(200px at ${posX}px ${posY}px, rgba(0, 0, 0, 0),rgba(0,0,0,0.95))`
-})
+document.addEventListener("touchmove", (event) => {
+  const touch = event.touches[0];
+  updatePosition(touch.pageX, touch.pageY);
+});
+
+window.addEventListener('scroll', () => {
+  // Recalcule la position du dégradé en ajoutant le scroll
+  updatePosition(lastX, lastY);
+});
 
 let switchLight = lightButton.addEventListener("click", (event) => {
     if (lightButton.src.endsWith("/images/icons8-ampoule-globe-100-off.png")){
