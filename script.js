@@ -60,12 +60,12 @@ let showMenu = menuButton.addEventListener("click", (event) => {
 // Données a afficher dans le caroussel
 let currentIndex = 0;
 let experiences = [
-    {type :"Scolaire", title : "Collège", subtitle : "Collège Léonard de vinci - Carvin (2015-2019)", text : "En 3ème je fus dans une 3ème spécial, en effet les professeurs venait de créer une classe spécial \"Découvertes des Métiers de l'informatique\". Ce fut une expérience enrichissante qui m\'a donné la certitude que je voulais travailler dans ce domaine."},
+    {type :"Scolaire", title : "Collège", subtitle : "Collège Léonard de vinci - Carvin (2015-2019)", text : "En 3ème je fus dans une 3ème spéciale. En effet les professeurs venaient de créer une classe spécial \"Découvertes des Métiers de l'informatique\". Ce fut une expérience enrichissante qui m\'a donné la certitude que je voulais travailler dans ce domaine."},
     {type :"Scolaire", title : "Lycée", subtitle : "Lycée Louis Pasteur - Hénin-Beaumont (2019-2022)",text : "Après avoir eu mon brevet je suis parti en bac général au Lycée Louis Pasteur à Henin Beaumont. Les spécialités que j'ai choisi étaient Sciences de l'Ingénieur, Mathématiques, et Numérique Sciences Informatique. En terminal j'ai gardé NSI, Mathématiques et j'ai rajouté l'option Math expertes."},
-    {type :"Scolaire", title : "Faculté", subtitle : "Université d'Artois, Faculté Jean-Perrin - Lens (2022- Aujourd'hui)",text : "C'est à la fac que j'ai réellement appris de manière complète et diversifié l'informatique. En effet j'ai pu y découvrir pleins de notions algorithmique, faire des projets, mais aussi apprendre plein de langages différents durant mes deux premières années de faculté. Je peux citer par exemple le HTML, CSS, JS, C, Python, SQL ...etc. Grâce à beaucoup de travail j'ai peux dire avec fierté que j'ai validé mes deux premières années de faculté avec mention !"},
-    {type :"Professionnel", title : "Annimateur en ACM", subtitle : "Carvin - 2022-2024",text : "Après avoir eu mon BAFA (Brevet d'Aptitudes aux Fonctions d'Animateur) je travaillais en tant qu'animateur en ACM à Carvin. Ce fut mon premier pas dans le monde du travail. Mais c'était l'une des meilleurs expériences professionnel que j'ai eu. Etre animateur m'a permis de m'affirmer et de ne pas avoir peur du ridicule. Cela a aussi fait apparaître le fait que j'aimais prendre des initiatives tout en considérant l'opinion de mes collègues (lors de la préparation d'activités par exemple)."},
-    {type :"Professionnel", title : "Aldi", subtitle : "Libercourt (12/2024-04/2025)",text : "J'ai voulu ensuite découvrir de nouveau milieu, et je suis tombé dans celui du commerce. En commençant dans un premier temps chez ALDI à Libercourt. Cette expérience était comme le premier saut dans l'inconnu. Mes missions là bas étaient surtout de faire de la caisse et la préparation du pain avant l'ouverture du magasin."},
-    {type :"Professionnel", title : "Lidl", subtitle : "Annoeulin (05/2025-Aujourd'hui)",text : "Dû a une notion d'équipe qui n'était absolument pas présente dans chez ALDI, j'ai préféré laisser ma place à quelqu'un d'autre. Je suis donc arrivé chez LIDL. Même si le métier est le même sur le papier, l'expérience était tout autre. J'ai découvert une véritable équipe soudé qui m'a formé sur toutes les missions d'un équipier polyvalent. J'y ai fait toutes sortes de missions : du nettoyage du magasin, à la caisse, la mise en rayon du frais, du sec, des surgelés, de la préparation de la boulangerie pour le lendemain à la cuisson du pain au matin. C'est un excellent travail étudiant qui m'a appris bien des choses, comme la notion de performance, mais aussi de respect et d'entraide entre collègues."}
+    {type :"Scolaire", title : "Faculté", subtitle : "Université d'Artois, Faculté Jean-Perrin - Lens (2022- Aujourd'hui)",text : "C'est à la fac que j'ai réellement appris de manière complète et diversifié l'informatique. En effet j'ai pu y découvrir pleins de notions algorithmiques, faire des projets, mais aussi apprendre plein de langages différents durant mes deux premières années de faculté. Je peux citer par exemple le HTML, CSS, JS, C, Python, SQL ...etc. Grâce à beaucoup de travail je peux dire avec fierté que j'ai validé mes deux premières années de faculté avec mention !"},
+    {type :"Professionnel", title : "Animateur en ACM", subtitle : "Carvin - 2022-2024",text : "Après avoir eu mon BAFA (Brevet d'Aptitudes aux Fonctions d'Animateur) j'ai travaillé en tant qu'animateur en ACM à Carvin. Ce fut mon premier pas dans le monde du travail. C'était l'une des meilleurs expériences professionnel que j'ai eu. Etre animateur m'a permis de m'affirmer et de ne pas avoir peur du ridicule. Cela a aussi fait apparaître le fait que j'aimais prendre des initiatives tout en considérant l'opinion de mes collègues (lors de la préparation d'activités par exemple)."},
+    {type :"Professionnel", title : "Aldi", subtitle : "Libercourt (12/2024-04/2025)",text : "J'ai voulu ensuite découvrir de nouveaux milieux, et je suis tombé sur celui du commerce. En commençant dans un premier temps chez ALDI à Libercourt. Cette expérience était comme un saut dans l'inconnu car je n'avais aucune idée de ce qu'est le monde du commerce. Mes missions là bas étaient surtout de faire de la caisse et la préparation du pain avant l'ouverture du magasin."},
+    {type :"Professionnel", title : "Lidl", subtitle : "Annoeulin (05/2025-Aujourd'hui)",text : "Dû a une notion d'équipe qui n'était absolument pas présente dans chez ALDI, j'ai préféré laisser ma place à quelqu'un d'autre. Je suis donc arrivé chez LIDL. Même si le métier est le même sur le papier, l'expérience était tout autre. J'ai découvert une véritable équipe soudé qui m'a formé sur toutes les missions d'un équipier polyvalent. J'y ai fait toutes sortes de missions : nettoyage du magasin, tenir la caisse, mettre en rayon du frais, le sec, les surgelés, préparer la boulangerie pour le lendemain, la cuisson du pain. C'est un excellent travail étudiant qui m'a appris bien des choses, comme la notion de performance, mais aussi de respect et d'entraide entre collègues."}
 ];
 
 // Partie du programme gérant la dynamique du carousselle
@@ -176,7 +176,13 @@ let heightObserver = new ResizeObserver(entries => {
 
 //Partie du codes gérant les projets à afficher
 let projects = [
-    {projectName : "Test", projectImageURL : "./images/projects/test/me.jpg", projectDescription : "Les projets sont actuellement en cours de publications, pour les consulter, veuillez revenir ultérieurement", languages : "...", screenShots : []},
+    {
+        projectName : "Pong",
+        projectImageURL : "./images/projects/pong/pong.png",
+        projectDescription : "L'objectif de ce projet était de découvrir Unity. J'ai donc opté pour une méthode simple, refaire des petits jeux. Et quoi de mieux pour s'initier que le jeux retro \"Pong\" ! J'ai donc refait ce jeu jouable à deux joueurs sur un même PC.",
+        languages : "Unity (Rigidbody, UI, Sprites, New Input System Manager, BoxCollider), C#",
+        screenShots : ["./images/projects/pong/menu.png","./images/projects/pong/game.png"],
+        demo:"https://play.unity.com/en/games/447ca05c-46a5-4895-88c6-0591bca2a29c/pong"}
 ];
 
 //Récupération des éléments du DOM
@@ -186,6 +192,7 @@ let projectImageElement = document.getElementById("ProjectImage");
 let projectDescriptionElement = document.getElementById("ProjectDescription");
 let ProjectLangagesUsedElement = document.getElementById("Languages");
 let ProjectScreenShotsElement = document.getElementById("Screenshots");
+let projectContent = document.getElementById("ProjectContent");
 
 let closeProject = document.getElementById("Close").addEventListener("click", (event) => {
     popupProjectElement.style.display = "none";
@@ -212,6 +219,15 @@ function updateProjectContent(index) {
         ProjectScreenShotsElement.appendChild(linkScreenElement);
         linkScreenElement.appendChild(screenShotElement);
     });
+
+    let demoLink = document.getElementById("DemoLink");
+    if (project.demo != "") {
+        demoLink.textContent = "Lien vers la démo du projet";
+        demoLink.href = project.demo;
+    } else {
+        demoLink.textContent = "Malheureusement, avoir une démonstration de ce projet n'est pas possible..."
+        demoLink.href = "#";
+    }
 }
 
 
