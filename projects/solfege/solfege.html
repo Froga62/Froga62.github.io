@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Solfège</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <button id="Pause">Commencer</button>
+            <svg id="svg">
+            </svg>
+            <input type="range" name="bpm" id="bpm" min="0" max="250" step="1">
+            <p>BPM : <output id="outputBPM"></output></p>
+        </section>
+
+        <section>
+            <div id="buttonGuessContainer">
+                <button class="noteGuess" value="do">DO</button>
+                <button class="noteGuess" value="re">RE</button>
+                <button class="noteGuess" value="mi">MI</button>
+                <button class="noteGuess" value="fa">FA</button>
+                <button class="noteGuess" value="sol">SOL</button>
+                <button class="noteGuess" value="la">LA</button>
+                <button class="noteGuess" value="si">SI</button>
+            </div>
+            <p>Score : <output id="Score"></output></p>
+            <output id="Answer"></output>
+        </section>
+    </main>
+</body>
+</html>

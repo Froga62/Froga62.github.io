@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    height: 250px;
+    width: 300px;
+    border: 1px solid grey;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+section {
+}
+@media screen and (min-width: 768px) {
+    svg{
+        width: 500px;
+    }
+}
+
+.noteGuess {
+    padding: 1.5em;
+}
+
+.good {
+    color: green;
+}
+
+.bad {
+    color: red;
+}

@@ -182,7 +182,15 @@ let projects = [
         projectDescription : "L'objectif de ce projet était de découvrir Unity. J'ai donc opté pour une méthode simple, refaire des petits jeux. Et quoi de mieux pour s'initier que le jeux retro \"Pong\" ! J'ai donc refait ce jeu jouable à deux joueurs sur un même PC.",
         languages : "Unity (Rigidbody, UI, Sprites, New Input System Manager, BoxCollider), C#",
         screenShots : ["./images/projects/pong/menu.png","./images/projects/pong/game.png"],
-        demo:"https://play.unity.com/en/games/447ca05c-46a5-4895-88c6-0591bca2a29c/pong"}
+        demo:"https://play.unity.com/en/games/447ca05c-46a5-4895-88c6-0591bca2a29c/pong"},
+    {
+        projectName : "Solfege Learning",
+        projectImageURL : "./images/projects/solfege/note.png",
+        projectDescription : "C'est un projet personnel me permettant de m'entrainer pour la lecture de la clé de sol au solfège. Pour information, le projet est en cours et n'est pas encore terminé.",
+        languages : "HTML, CSS, JS",
+        screenShots : [],
+        demo : "./projects/solfege/solfege.html"
+    }
 ];
 
 //Récupération des éléments du DOM
