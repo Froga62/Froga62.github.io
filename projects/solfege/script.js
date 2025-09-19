@@ -37,6 +37,21 @@ const cleSol = [
     {name : "re"},
     {name : "do"}
 ]
+const cleFa = [
+    {name : "do"},
+    {name : "si"},
+    {name : "la"},
+    {name : "sol"},
+    {name : "fa"},
+    {name : "mi"},
+    {name : "re"},
+    {name : "do"},
+    {name : "si"},
+    {name : "la"},
+    {name : "sol"},
+    {name : "fa"},
+    {name : "mi"}
+]
 
 let x = 600;
 
@@ -94,6 +109,7 @@ function addNote(notes) {
         svg.appendChild(newNote);
     
         noteCreated.push({note:newNote, x:0, name : notes[noteIndex].name})
+        console.log(notes[noteIndex].name)
         return newNote;
     }
 }
@@ -133,7 +149,7 @@ function animate(timestamp) {
     moveLeft((SPEED_MOVEMENT/1000) * (timestamp - timer));
     timer = timestamp;
     if (timestamp - timerSpawn > SPAWN_INTERVAL){
-        addNote(cleSol);
+        addNote(selectedKey);
         timerSpawn = timestamp;
     }
     requestAnimationFrame(animate);
@@ -218,5 +234,22 @@ function switchPause() {
     }
 };
 
+let selectedKey = cleSol;
+function switchKey(){
+    if (selectedKey == cleSol){
+        selectedKey = cleFa;
+        submit.textContent = "Clé : Fa";
+    } else {
+        selectedKey = cleSol;
+        submit.textContent = "Clé : Sol";
+    }
+    while (noteCreated.length > 0){
+        noteCreated[0].note.remove()
+        noteCreated.shift();
+    }
+}
+
+let submit = document.getElementById("selectKey");
+submit.addEventListener("click", switchKey);
 pauseButton.addEventListener("click", switchPause);
 requestAnimationFrame(animate);
