@@ -1,43 +1,108 @@
-body {
+/* Reset et base */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-svg {
-    height: 250px;
-    width: 300px;
-    border: 1px solid grey;
-    display: block;
-    margin: 0 auto;
+body {
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 main {
-    width: 90%;
-    margin: 0 auto;
-    padding: 3em 0;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
     text-align: center;
 }
 
-p {
-    margin: 0;
+/* SVG et notation */
+svg {
+    width: 90%;
+    max-width: 600px;
+    height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    display: block;
+    margin: 1em auto 2em;
 }
 
+/* Sections */
 section {
-}
-@media screen and (min-width: 768px) {
-    svg{
-        width: 500px;
-    }
+    margin-bottom: 2em;
 }
 
+/* Boutons */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.5em;
+    margin: 0.3em;
+    font-size: 1em;
+    transition: all 0.2s ease-in-out;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Boutons de note */
 .noteGuess {
-    padding: 1.5em;
+    padding: 1em 1.5em;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="range"] {
+    width: 80%;
+    margin: 1em 0;
+}
+
+/* Texte et outputs */
+p, output {
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+#Answer {
+    display: block;
+    margin-top: 0.8em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .good {
-    color: green;
+    color: #28a745;
 }
 
 .bad {
-    color: red;
+    color: #dc3545;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+    svg {
+        height: 300px;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+
+    #buttonGuessContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
 }

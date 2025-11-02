@@ -193,7 +193,7 @@ let projects = [
     },
     {
         projectName : "Lex Calculator",
-        projectImageURL : "none",
+        projectImageURL : "https://img.icons8.com/doodle/300/apple-calculator.png",
         projectDescription : "Ce projet de faculté était de faire un analyseur lexical avec Lex permettant de faire des opérations de base en notation postfixée.",
         languages : "Lex, C, Makefile, Git",
         screenShots : [],
