@@ -188,16 +188,19 @@ let projects = [
         projectImageURL : "./images/projects/solfege/note.png",
         projectDescription : "C'est un projet personnel me permettant de m'entrainer pour la lecture de la clé de sol au solfège. Pour information, le projet est en cours et n'est pas encore terminé.",
         languages : "HTML, CSS, JS",
-        screenShots : [],
+        screenShots : ["./images/projects/solfege/demo.png"],
         demo : "./projects/solfege/solfege.html"
     },
     {
-        projectName : "Lex Calculator",
-        projectImageURL : "https://img.icons8.com/doodle/300/apple-calculator.png",
-        projectDescription : "Ce projet de faculté était de faire un analyseur lexical avec Lex permettant de faire des opérations de base en notation postfixée.",
-        languages : "Lex, C, Makefile, Git",
-        screenShots : [],
-        demo : ""
+        projectName : "Implémentation Random Forest & CART from scratch",
+        projectImageURL : "https://img.icons8.com/?size=300&id=6ozQ6RVpK3sa&format=png&color=000000",
+        projectDescription : "Ce projet de faculté avait pour objectif de comprendre d'implémenter les algorithmes CART et Random Forest. Afin d'effectuer des prédictions sur des données de type classification.",
+        languages : "Python",
+        screenShots : ["./images/projects/classification/main_menu.png",
+            "./images/projects/classification/import_csv.png",
+            "./images/projects/classification/algo_choose.png",
+            "./images/projects/classification/prediction.png"],
+        demo : "https://github.com/Froga62/ProjetClassification"
     }
 ];
 
